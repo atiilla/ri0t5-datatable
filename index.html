@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>DATA | CONTROL SYSTEM</title>
+<link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+body {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.row {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.row .row {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h2>DATA | CONTROL SYSTEM</h2>
+	</div>
+	<div class="row">
+		<h4>Ri0t5</h4>
+		<div>
+			<div class="createTableJSON"></div>
+			<figure class="highlight">
+				
+					<pre>
+					<div class="img_stats" style="float:left"><img src="img/stats.png"></div>\
+					<h2> Statistics for Feedbacks</h2>
+						
+
+					
+					
+				</pre>
+				<code>
+						How to use it?
+[{"id": 1,"gender": "Male","first_name": "Randy","last_name": "Russell","email": "rrussell0@ebay.com","ip_address": "65.239.17.202"}, 
+{"id": 2,"gender": "Male","first_name": "Mark","last_name": "Ryan","email": "mryan1@cbsnews.com","ip_address": "69.21.244.122"}.... & more]
+					</code>
+			</figure>
+		</div>
+	</div>
+</div>
+<script src="js/jsonToTable.min.js"></script>
+<script>
+var dtbl = new createTable({
+	url:'data/data.json',
+	wrapper:".createTableJSON"
+}).create();
+</script>
+</body>
+</html>
